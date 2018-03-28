@@ -1,0 +1,51 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^1.3.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.0",
+    "express": "4.13.4",
+    "graphql": "^0.13.2",
+    "graphql-subscriptions": "^0.5.8",
+    "graphql-tag": "^2.8.0",
+    "graphql-tools": "^2.23.1",
+    "lodash": "^4.17.5",
+    "mongoose": "^5.0.12",
+    "subscriptions-transport-ws": "^0.9.7"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-inline-import": "^2.0.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-react": "^7.7.0",
+    "nodemon": "^1.17.2"
+  },
+  "scripts": {
+    "start": "nodemon ./index.js --exec babel-node"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "babel-preset-react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "eslint": {
+    "extends": [
+      "prettier",
+      "prettier/react"
+    ]
+  }
+}
